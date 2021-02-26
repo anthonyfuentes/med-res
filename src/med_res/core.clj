@@ -1,6 +1,9 @@
-(ns med-res.core)
+(ns med-res.core
+  (:require [etaoin.api                   :refer [firefox]]
+            [med-res.scrapers.acog-obgyn  :as acogob]
+            [clojure.pprint               :refer [pprint]]))
 
-(defn -main [x]
-  (->> x
-       (str "Received: ")
-       println))
+(defn -main []
+  (-> (firefox)
+      acogob/scrape
+      pprint))
