@@ -1,9 +1,9 @@
 (ns med-res.core
   (:require [etaoin.api                   :refer [firefox]]
             [med-res.scrapers.acog-obgyn  :as acogob]
-            [clojure.pprint               :refer [pprint]]))
+            [med-res.csv                  :as csv]))
 
-(defn -main []
+(defn -main [path]
   (-> (firefox)
       acogob/scrape
-      pprint))
+      (csv/write path)))

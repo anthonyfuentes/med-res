@@ -19,3 +19,4 @@
 - [igrishaev/etaoin](https://github.com/igrishaev/etaoin)
   - [Docs](https://cljdoc.org/d/etaoin/etaoin/0.4.0/doc/readme)
 - [leiningen](https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md)
+- [geckodriver](https://github.com/mozilla/geckodriver/releases)

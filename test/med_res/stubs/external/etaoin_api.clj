@@ -1,5 +1,4 @@
-(ns med-res.stubs.external.etaoin-api
-  (:require [clj-fakes.core :as f]))
+(ns med-res.stubs.external.etaoin-api)
 
 (def children-return
   [:child :child])
